@@ -6,17 +6,17 @@ import paths from "../paths";
 
 const config: webpack.Configuration = {
 	entry: {
-		app: paths.src,
+		app: paths.src
 	},
 	target: "web",
 	output: {
 		filename: "[name].js",
 		path: path.join(paths.build, paths.publicPath),
-		publicPath: paths.publicPath,
+		publicPath: paths.publicPath
 	},
 	resolve: {
 		// Don't remove options like js, cjs, mjs, as they are necessary for webpack-dev-server
-		extensions: [".wasm", ".ts", ".tsx", ".mjs", ".cjs", ".js", ".json"],
+		extensions: [".wasm", ".ts", ".tsx", ".mjs", ".cjs", ".js", ".json"]
 	},
 	module: {
 		rules: [
@@ -27,23 +27,23 @@ const config: webpack.Configuration = {
 					{
 						loader: "ts-loader",
 						options: {
-							transpileOnly: true,
-						},
-					},
+							transpileOnly: true
+						}
+					}
 				],
-				exclude: paths.nodeModules,
-			},
-		],
+				exclude: paths.nodeModules
+			}
+		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: path.join(paths.src, "index.html"),
+			template: path.join(paths.src, "index.html")
 		}),
-		new ForkTsCheckerWebpackPlugin(),
+		new ForkTsCheckerWebpackPlugin()
 	],
 	optimization: {
 		removeAvailableModules: true,
-		removeEmptyChunks: true,
+		removeEmptyChunks: true
 	},
 	stats: {
 		cached: false,
@@ -56,8 +56,8 @@ const config: webpack.Configuration = {
 		modules: false,
 		reasons: false,
 		timings: true,
-		version: false,
-	},
+		version: false
+	}
 };
 
 export default config;

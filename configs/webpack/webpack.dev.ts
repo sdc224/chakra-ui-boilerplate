@@ -10,8 +10,8 @@ const config: webpack.Configuration = webpackMerge(baseConfig, {
 		port: 5000,
 		contentBase: paths.build,
 		compress: true,
-		open: true,
-	},
+		open: true
+	}
 });
 
 export default config;

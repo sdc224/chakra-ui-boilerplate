@@ -13,7 +13,7 @@ const paths = {
 	types: resolveApp("node_modules/@types"),
 	appTypes: resolveApp("src/@types"),
 	publicPath: "/",
-	resolveModules: [resolveApp("src"), "node_modules"],
+	resolveModules: [resolveApp("src"), "node_modules"]
 };
 
 export default paths;

@@ -34,6 +34,12 @@ build/
 
 .idea
 npm-debug.log.*
+__snapshots__
 *.css.d.ts
 *.sass.d.ts
 *.scss.d.ts
+
+# Package.json
+package.json
+yarn.lock
+.travis.yml

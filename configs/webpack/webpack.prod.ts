@@ -3,7 +3,7 @@ import webpackMerge from "webpack-merge";
 import baseConfig from "./webpack.common";
 
 const config: webpack.Configuration = webpackMerge(baseConfig, {
-	mode: "production",
+	mode: "production"
 });
 
 export default config;
