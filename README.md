@@ -1,4 +1,4 @@
-# CHAKRA UI BOILERPLATE
+# Chakra UI Boilerplate
 
 A boilerplate for setting up Chakra UI, with latest dependencies.
 
