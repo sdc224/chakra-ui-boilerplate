@@ -2,7 +2,11 @@
 	"name": "chakra-ui-boilerplate",
 	"version": "1.0.0",
 	"description": "Chakra UI Boilerplate",
-	"author": "Sourodeep Chatterjee <sourodeep224@outlook.com>",
+	"author": {
+		"name": "Sourodeep Chatterjee",
+		"email": "sourodeep224@outlook.com",
+		"url": "https://github.com/sdc224"
+	},
 	"license": "MIT",
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development TS_NODE_PROJECT=tsconfig.tools.json webpack-dev-server --config configs/webpack/webpack.dev.ts"
