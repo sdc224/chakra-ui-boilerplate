@@ -1,12 +1,12 @@
 module.exports = function (api) {
-	api.cache(false);
+	api.cache(true);
 	const presets = [
 		["@babel/preset-typescript"],
 		[
 			"@babel/preset-env",
 			{
 				corejs: { version: 3 },
-				useBuiltIns: "usage",
+				useBuiltIns: "entry",
 				targets: {
 					edge: "17",
 					firefox: "60",

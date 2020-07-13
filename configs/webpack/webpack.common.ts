@@ -6,7 +6,7 @@ import paths from "../paths";
 
 const config: webpack.Configuration = {
 	entry: {
-		app: ["core-js/stable", paths.src],
+		app: paths.src,
 	},
 	target: "web",
 	output: {
@@ -42,9 +42,8 @@ const config: webpack.Configuration = {
 		new ForkTsCheckerWebpackPlugin(),
 	],
 	optimization: {
-		removeAvailableModules: false,
-		removeEmptyChunks: false,
-		splitChunks: false,
+		removeAvailableModules: true,
+		removeEmptyChunks: true,
 	},
 	stats: {
 		cached: false,
